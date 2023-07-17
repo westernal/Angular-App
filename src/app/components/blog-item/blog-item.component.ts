@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Blog } from 'src/app/Types/interfaces';
 
 @Component({
   selector: 'app-blog-item',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog-item.component.css'],
 })
 export class BlogItemComponent {
-  title: string = 'Post';
+  @Input() blog: Blog = { id: 0, userId: 0, title: '', body: '' };
+
+  constructor() {}
 }

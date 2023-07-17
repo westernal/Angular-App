@@ -1,4 +1,10 @@
-<article class="shadow-lg border-2 rounded-xl p-5 border-slate-900 text-center">
-  <img class="rounded w-80 h-80" src="https://picsum.photos/200" alt="Image" />
-  <h2 class="mt-3">{{ title }}</h2>
+<article
+  class="shadow-lg hover:shadow-xl transition-all border rounded-xl p-5 text-center w-96 m-5 grid place-items-center"
+>
+  <img
+    class="rounded w-80 h-80"
+    src="https://picsum.photos/id/{{ blog.id }}/200"
+    alt="Image"
+  />
+  <h2 class="mt-3 font-semibold">{{ blog.title }}</h2>
 </article>
